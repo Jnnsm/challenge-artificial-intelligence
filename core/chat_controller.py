@@ -50,7 +50,7 @@ List of contents:
         return response['content']
 
     def format_knowledge_base(self, document: Document):
-        return f"{"{"}\n    metadata: {document.metadata}\n    page_content: {document.page_content}\n{"}"}"
+        return f"{'{'}\n    metadata: {document.metadata}\n    page_content: {document.page_content}\n{'}'}"
 
     def format_messages(self, knowledge_base: str = "") -> list[dict[str, str]]:
         prompt_message = {"role": "system", "content": chevron.render(

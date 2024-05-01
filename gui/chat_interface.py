@@ -8,6 +8,7 @@ from core.chat_controller import ChatController
 class ChatInterface(ctk.CTk):
     def __init__(self):
         super().__init__()
+        ctk.set_appearance_mode("dark")
         self.controller = ChatController()
 
         self.title("Chat")
