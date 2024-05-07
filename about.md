@@ -1,9 +1,3 @@
----
-title: ABOUT PAGE
-layout: template
-filename: about.md
---- 
-
 # Como rodar
 ## Instalaçoes necessárias
 Primeiro, é necessário instalar o *Tesseract* para extração de textos em imagens. 
@@ -13,3 +7,5 @@ Além disso, será necessário instalar o *ffmpeg* com o comando `sudo apt insta
 
 Para uma melhor performance também é recomendado o nvcc: `sudo apt install nvidia-cuda-toolkit`
 Seguido de uma instalação limpa do llama-cpp:`CMAKE_ARGS="-DLLAMA_CUBLAS=on" pip install llama-cpp-python --force-reinstall --upgrade --no-cache-dir`
+
+Para ubuntu o tk é necessário: `sudo apt-get install python3-tk`
