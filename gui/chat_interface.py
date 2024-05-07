@@ -48,7 +48,8 @@ class ChatInterface(ctk.CTk):
     def load_database(self) -> None:
         self.controller.init_database()
         self.after(0, self.setup_chat_interface)
-        self.add_bot_message("Oi, seja bem vindo ao chat com o Edu!")
+        self.add_bot_message(
+            "Oi, seja bem vindo ao chat com o Edu! Procura material para auxiliar seus estudos? Vamos conversar!")
 
     def setup_chat_interface(self) -> None:
         # Chat
